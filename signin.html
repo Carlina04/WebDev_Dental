@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- Site Metas -->
+   <title>Dental Care</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/fevicon.ico.png" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Colors CSS -->
+   <link rel="stylesheet" href="css/colors.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+   <!-- Modernizer for Portfolio -->
+   <script src="js/modernizer.js"></script>
+   <!-- [if lt IE 9] -->
+   </head>
+   <body class="clinic_version"  style="background-color: blue;">
+      <!-- LOADER -->
+      <div id="preloader">
+         <img class="preloader" src="images/loaders/heart-loading2.gif" alt="">
+      </div>
+      <!-- END LOADER -->
+      <header>
+         <div class="header-bottom wow fadeIn">
+            <div class="container">
+               <nav class="main-menu">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                  </div>
+                  <div id="navbar" class="navbar-collapse collapse">
+                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                     <ul class="nav navbar-nav">
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a 	href="#service">Services</a></li>
+                        <li><a data-scroll href="#doctors">Doctors</a></li>
+                        <li><a data-scroll href="appointments.html">Appointment</a></li>
+						      <li><a data-scroll href="#testimonials">My Records</a></li>
+                        <li><a data-scroll class="active" href="#signin.html">Log In</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </header>
+    
+      <div class="container" style="max-height: 700px" >
+		<br>
+		<br>
+		<br>
+		<br>
+		 <h1>Log In/ Registration</h1>
+		 
+		 <div class="bg">
+			<div class="formbox">
+				<div><img src="fb.png" alt="logo" class="face"></div>
+				<div id="btn"></div>
+				<div class="buttonbox">
+					<button type="button" class="tog-btn" onclick="login()">Log In</button>
+					<button type="button" class="tog-btn" onclick="reg()">Register</button>
+				</div>
+				<div class="social">
+				<img src="images/fb.png">
+				<img src="images/google.png">
+				<img src="images/linked.jpg">
+				
+			</div>
+				<form id="login" class="input-group">
+					<input type="text" class="input" name="email" placeholder="Username" required="">
+					<input type="text" class="input" name="pwrd" placeholder=" Password Required" required="">
+					<input type="checkbox" class="cb"><span class="rp">Remember Password</span>
+					<button type="submit" class="submitbtn">Log In</button>
+				</form>
+				<form id="reg" class="input-group">
+					<input type="text" class="input" name="email" placeholder="Username" required="">
+					<input type="text" class="input" name="email" placeholder="Email Required" required="">
+					<input type="text" class="input" name="pwrd" placeholder=" Password Required" required="">
+					<input type="checkbox" class="cb" required=""><span class="rp">I agree to the terms and condition</span>
+					<button type="submit" class="submitbtn">Register</button>
+				</form>
+			</div>
+			
+		</div>
+
+      <!-- end copyrights -->
+      <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- all js files -->
+      <script src="js/all.js"></script>
+      <!-- all plugins -->
+      <script src="js/custom.js"></script>
+      <!-- map -->
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
+	 
+	 <script type="text/javascript">
+				var x=document.getElementById("login");
+				var y=document.getElementById("reg");
+				var z=document.getElementById("btn");
+
+				function reg(){
+					x.style.left ="-400px";
+					y.style.left ="50px";
+					z.style.left ="193px";
+				}
+				function login(){
+					x.style.left ="50px";
+					y.style.left ="450px";
+					z.style.left ="80px";
+				}
+			</script>
+   </body>
+</html>
